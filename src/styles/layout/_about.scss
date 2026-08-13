@@ -1,0 +1,111 @@
+.about-page {
+  &__hero {
+    padding-block: clamp(4rem, 8vw, 7rem);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  &__hero-inner,
+  &__grid,
+  &__cta-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(3rem, 8vw, 7rem);
+  }
+
+  &__hero-inner {
+    align-items: end;
+  }
+
+  h1 {
+    max-width: 13ch;
+    margin-bottom: 1.5rem;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    letter-spacing: -0.055em;
+  }
+
+  &__intro {
+    max-width: 42rem;
+    font-size: clamp(1.125rem, 2vw, 1.35rem);
+  }
+
+  &__summary {
+    padding: 1.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__summary-title {
+    margin-bottom: 0.75rem;
+    color: var(--color-text);
+    font-weight: 700;
+  }
+
+  &__content,
+  &__scope,
+  &__local {
+    padding-block: clamp(4rem, 8vw, 7rem);
+
+    h2 {
+      max-width: 12ch;
+      margin-bottom: 1rem;
+      font-size: clamp(2.25rem, 4vw, 3.5rem);
+      letter-spacing: -0.04em;
+    }
+  }
+
+  &__scope {
+    border-block: 1px solid var(--color-border);
+    background: var(--color-surface);
+  }
+
+  &__principles {
+    border-top: 1px solid var(--color-border);
+
+    p {
+      margin: 0;
+      padding-block: 1.2rem;
+      border-bottom: 1px solid var(--color-border);
+      color: var(--color-text);
+      font-weight: 600;
+    }
+  }
+
+  &__local .text-link {
+    margin-top: 1rem;
+  }
+
+  &__cta {
+    padding-block: clamp(4rem, 8vw, 6rem);
+    border-top: 1px solid var(--color-border);
+    background: var(--color-surface);
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: clamp(2.25rem, 4vw, 3.5rem);
+      letter-spacing: -0.04em;
+    }
+  }
+
+  &__cta-inner {
+    align-items: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .about-page {
+    &__hero-inner,
+    &__grid,
+    &__cta-inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__cta-inner {
+      align-items: start;
+    }
+  }
+}
