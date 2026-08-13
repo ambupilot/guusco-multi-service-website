@@ -1,0 +1,21 @@
+.button {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 1.25rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  font-weight: 650;
+  line-height: 1;
+
+  &--primary {
+    color: #fff;
+    background: var(--color-accent);
+  }
+
+  &--secondary {
+    border-color: var(--color-border);
+    background: var(--color-surface);
+  }
+}
