@@ -1,0 +1,12 @@
+.container { width: min(calc(100% - 2 * var(--page-gutter)), var(--container-width)); margin-inline: auto; }
+.hero { padding-block: clamp(4rem, 8vw, 7rem); }
+.hero__content { max-width: 48rem; }
+.hero h1 { max-width: 14ch; margin-bottom: 1.5rem; font-size: clamp(3rem, 7vw, 6rem); letter-spacing: -0.055em; }
+.hero__intro { max-width: 40rem; margin-bottom: 2rem; font-size: 1.2rem; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+.eyebrow { margin-bottom: .75rem; color: var(--color-accent); font-size: .8125rem; font-weight: 750; text-transform: uppercase; letter-spacing: .08em; }
+.section { padding-block: clamp(4rem, 8vw, 7rem); }
+.service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.service-card { min-height: 9rem; display: flex; align-items: flex-end; padding: 1.5rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
+@media (max-width: 800px) { .service-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .service-grid { grid-template-columns: 1fr; } }
